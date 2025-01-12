@@ -1,27 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html",],
+  content: ["./src/**/*.{html,js}", "./index.html", "./node_modules/flowbite/**/*.js",],
+  darkMode: 'media',
   theme: {
     extend: {
-      transitionDuration: {
-        '2000': '2000ms',
-        '3000': '3000ms',
-        '4000': '4000ms',
-      },
-      aspectRatio: {
-        '16/9': [16, 9],
-        '4/3': [4, 3],
-      },
     },
     colors: {
-      'gunmetal': '#19323C',
-      'charcoal' : '#244856',
-      'mintcream': '#F3F7F0',
-      'mustardy': '#E09F3E',
-      'battleship': '#74776B',
-      'aquatic': '#1B9AAA',
-      'violet': '#7F557D',
-      'eggplant': '#673C4F',
+      'brightblue': '#76E5FC',
+      'butterscotch': '#EEA243',
+      'ghostwhite': '#FFFAFF',
+      'jet': '#303036',
+      'tomato': '#C03221',
     },
     fontFamily: {
       headline: ['Monda', 'Verdana', 'sans-serif'],
@@ -29,11 +18,8 @@ module.exports = {
       body: ['Verdana', 'Arial', 'sans-serif'],
     }
   },
-  corePlugins: {
-    aspectRatio: false,
-  },
   plugins: [
-    // require('flowbite/plugin'),
+    require('flowbite/plugin'),
   ],
 }
 

@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 body {
-    @apply p-8 font-body text-lg text-gunmetal dark:text-mintcream bg-mintcream dark:bg-gunmetal;
+    @apply font-body text-lg bg-ghostwhite dark:bg-jet text-jet dark:text-ghostwhite;
+}
+
+main {
+    @apply mx-auto p-8;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-headline text-aquatic dark:text-mustardy pb-4;
+    @apply font-headline text-tomato dark:text-butterscotch pb-4;
 }
 
 h1 {
